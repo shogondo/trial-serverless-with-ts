@@ -1,9 +1,15 @@
 {
     "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs"
+        "target": "es2017",
+        "module": "commonjs",
+        "sourceMap": true,
+        "lib": [
+            "es2017",
+            "dom",
+            "esnext.asynciterable"
+        ]
     },
     "exclude": [
-      "node_modules"
+        "node_modules"
     ]
-  }
+}
