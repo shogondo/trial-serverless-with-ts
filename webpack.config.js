@@ -1,7 +1,7 @@
 var path = require("path");
 
 module.exports = {
-  entry: "./index.ts",
+  entry: "./handlers.ts",
   target: "node",
 
   module: {
@@ -9,8 +9,8 @@ module.exports = {
       {
         test: /\.ts(x?)$/,
         loader: "ts-loader",
-      },
-    ],
+      }
+    ]
   },
 
   resolve: {
@@ -18,14 +18,13 @@ module.exports = {
       ".ts",
       ".js",
       ".tsx",
-      ".jsx",
-      "",
-    ],
+      ".jsx"
+    ]
   },
 
   output: {
     libraryTarget: "commonjs",
     path: path.join(__dirname, ".built"),
-    filename: "index.js"
-  },
+    filename: "handlers.js"
+  }
 };
