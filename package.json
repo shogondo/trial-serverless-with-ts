@@ -1,0 +1,26 @@
+{
+  "name": "trial-serverless-with-ts",
+  "version": "1.0.0",
+  "description": "Trial Serverless framework with TypeScript",
+  "scripts": {
+    "serverless": "serverless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoutakenaka/trial-serverless-with-ts.git"
+  },
+  "author": "Shou Takenaka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shoutakenaka/trial-serverless-with-ts/issues"
+  },
+  "homepage": "https://github.com/shoutakenaka/trial-serverless-with-ts#readme",
+  "devDependencies": {
+    "serverless": "^1.22.0",
+    "serverless-webpack": "^3.0.0",
+    "ts-loader": "^2.3.7",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2",
+    "webpack": "^3.6.0"
+  }
+}
