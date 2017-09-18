@@ -1,1 +1,1 @@
-export * from './users';
+export * from './handlers/users';
