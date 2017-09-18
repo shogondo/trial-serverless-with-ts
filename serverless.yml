@@ -7,9 +7,12 @@ provider:
   stage: dev
   region: ap-northeast-1
 
+plugins:
+  - serverless-webpack
+
 functions:
-  hello:
-    handler: users.create
+  createUser:
+    handler: handlers.createUser
     events:
       - http:
           path: users/create
