@@ -18,6 +18,7 @@
   "devDependencies": {
     "@types/async": "2.0.31",
     "serverless": "^1.22.0",
+    "serverless-offline": "^3.16.0",
     "serverless-webpack": "^3.0.0",
     "ts-loader": "^2.3.7",
     "tslint": "^5.7.0",

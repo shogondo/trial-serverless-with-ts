@@ -9,3 +9,8 @@ npm install
 ```
 npm run serverless -- invoke local -f FUNCTION_NAME
 ```
+
+## Launch local web server
+```
+npm run serverless -- offline start
+```
