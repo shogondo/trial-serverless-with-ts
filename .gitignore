@@ -7,4 +7,4 @@ jspm_packages
 
 .built
 .DS_Store
-.sw?
+*.sw?
