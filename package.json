@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/shoutakenaka/trial-serverless-with-ts#readme",
   "devDependencies": {
-    "@types/async": "^2.0.31",
+    "@types/async": "2.0.31",
     "serverless": "^1.22.0",
     "serverless-webpack": "^3.0.0",
     "ts-loader": "^2.3.7",
