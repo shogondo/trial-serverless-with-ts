@@ -18,6 +18,12 @@ functions:
       - http:
           path: users
           method: post
+  updateUser:
+    handler: handlers.updateUser
+    events:
+      - http:
+          path: users
+          method: put
 
 resources:
   Resources:

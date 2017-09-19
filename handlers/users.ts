@@ -8,3 +8,12 @@ export function createUser(event, context, callback) {
         return user.toJson();
     });
 }
+
+export function updateUser(event, context, callback) {
+    Utils.processRequest(event, context, callback, (params) => {
+        let user = new User();
+        user.update(params);
+        return user.toJson();
+    });
+}
+
