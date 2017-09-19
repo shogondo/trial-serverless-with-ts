@@ -1,7 +1,9 @@
 export default class Utils {
-    public static respond(callback, action) {
+    public static processRequest(event, context, callback, action) {
+        console.log("Request", event);
         try {
-            let result = action();
+            let params = this.convertEventDataToRequestParams(event);
+            let result = action(params);
             let response = {
                 statusCode: 200,
                 body: JSON.stringify(result)
@@ -10,6 +12,15 @@ export default class Utils {
         }
         catch (error) {
             callback(this.convertErrorToResponse(error));
+        }
+    }
+
+    private static convertEventDataToRequestParams(event) {
+        if (event && event.body) {
+            return JSON.parse(event.body);
+        }
+        else {
+            return {};
         }
     }
 

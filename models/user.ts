@@ -5,7 +5,7 @@ export default class User {
     }
 
     create(data) {
-        this.email = data;
+        this.email = data.email;
         console.log("Created a new user.");
     }
 
