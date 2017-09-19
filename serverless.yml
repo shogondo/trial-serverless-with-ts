@@ -16,8 +16,8 @@ functions:
     handler: handlers.createUser
     events:
       - http:
-          path: users/create
-          method: get
+          path: users
+          method: post
 
 resources:
   Resources:
