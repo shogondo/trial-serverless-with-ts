@@ -12,18 +12,29 @@ plugins:
   - serverless-webpack
 
 functions:
-  createUser:
-    handler: handlers.createUser
+  users:
+    handler: handlers.users
     events:
+      - http:
+          path: users
+          method: get
+      - http:
+          path: users/{id}
+          method: get
+          request:
+            parameters:
+              paths:
+                id: true
       - http:
           path: users
           method: post
-  updateUser:
-    handler: handlers.updateUser
-    events:
       - http:
-          path: users
+          path: users/{id}
           method: put
+          request:
+            parameters:
+              paths:
+                id: true
 
 resources:
   Resources:
